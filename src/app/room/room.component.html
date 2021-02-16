@@ -1,0 +1,26 @@
+<style>
+body{
+    background-color: blanchedalmond;
+} 
+
+h1{
+    text-align:center;
+    color: rgb(2, 7, 56);
+}
+</style>
+
+<body>
+
+<h1> WELCOME TO WEBEX </h1>
+
+
+<input mdinput="" class="md-width" placeholder="Enter the Room name" class="md-input" [(ngModel)]="roomName">
+<br>
+<button md-button color="blue" (click)="onCreateRoom()">Create Room</button>
+<button md-button color="blue" (click)="addmember()">Add Member</button>
+
+<button md-button color="blue" (click)="sendmsg()">Send msg</button>
+
+<button type="button" md-button color="red" (click)="onLogout()" >Logout</button>
+
+</body>
