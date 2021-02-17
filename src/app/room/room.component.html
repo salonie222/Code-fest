@@ -1,6 +1,10 @@
 <style>
 body{
-    background-color: blanchedalmond;
+    background-color: skyblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin : 0;
 } 
 
 h1{
@@ -19,15 +23,15 @@ h1{
 <button md-button color="blue" (click)="onCreateRoom()">Create Room</button>
 <br> <br>
 
-<input mdinput="" class="md-width" placeholder="Enter the room Id" class="md-input" [(ngModel)]="roomId"> <br> <br>
-<input mdinput="" class="md-width" placeholder="Enter the Member name" class="md-input" [(ngModel)]="memberName"> <br> <br>
-<br>
-<button md-button color="blue" (click)="addPeopleToRoom()">Add Member</button> <br> <br>
+<input mdinput="" class="md-width" placeholder="Enter the room Id" class="md-input" [(ngModel)]="roomId"> <br> 
+<input mdinput="" class="md-width" placeholder="Enter the Member name" class="md-input" [(ngModel)]="memberName"> <br> 
+<button md-button color="blue" (click)="addPeopleToRoom()">Add Member</button>
+<br> <br>
 
-<input mdinput="" class="md-width" placeholder="Enter the room Id" class="md-input" [(ngModel)]="roomId"> <br> <br>
-<input mdinput="" class="md-width" placeholder="Enter the Message" class="md-input" [(ngModel)]="textMessage"> <br> <br>
-<br>
-<button md-button color="blue" (click)="sendmsgToRoom()">Send Message</button> <br> <br>
+<input mdinput="" class="md-width" placeholder="Enter the room Id" class="md-input" [(ngModel)]="roomId"> <br> 
+<input mdinput="" class="md-width" placeholder="Enter the Message" class="md-input" [(ngModel)]="textMessage"> <br> 
+<button md-button color="blue" (click)="sendmsgToRoom()">Send Message</button>
+<br> <br> <br>
 <button type="button" md-button color="red" (click)="onLogout()" >Logout</button>
 
 </body>
